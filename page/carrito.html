@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/styleCarrito.css">
+    <title>Carrito</title>
+    <link rel="icon" href="../multimedia/pyp.png" type="img">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div class="acceso">
+                <span>Acceso Clientes</span>
+                <div class="input">
+                    <input class="user" type="text" placeholder="Usuario">
+                    <input class="pass" type="password" placeholder="Password">
+                    <button class="enviar">Enviar</button>
+                </div>
+                <a href=""><span class="contactar">Contáctese con nosotros</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="compania">
+            <h1>Electromecánica P&P</h1>
+        </div>
+        <div class="navegacion">
+            <div class="inicio">
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a> 
+                    </li>
+                </ul>
+            </div>
+            <div class="enlaces">
+                <ul>
+                    <li><a href="../page/empresa.html">Empresa</a></li>
+                    <li><a href="../page/carrito.html">Carrito</a></li>
+                    <li><a href="../page/producto.html">Productos</a></li>
+                    <li><a href="../page/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="busqueda">
+            <input class="busquedaProducto" type="search" placeholder="Buscar">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                </a>
+            <p>Ingrese marca, modelo, código, n° original o atributo</p>
+        </div>
+        <div class="pedido">
+            <div class="carrito">
+                <h1>Carrito de pedido</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                </svg>
+            </div>
+            <form class="formularioDeProductos">
+                <div class="listaDeProductos">
+                    <ol>
+                        <li>Producto 1</li>
+                        <li>Producto 2</li>
+                        <li>Producto 3</li>
+                        <li>Producto 4</li>
+                        <li>Producto 5</li>
+                    </ol>    
+                </div>
+            </form>
+            <div class="observaciones">
+                <form>
+                    <h3>Observaciones</h3>
+                    <textarea></textarea>
+                </form>
+            </div>
+        </div>
+        <div class="total">
+            <div class="montoTotal">
+                <h1>Total: </h1>
+                <span></span>
+            </div>
+            <button><a href="">Realizar Pedido</a></button>
+        </div>
+        <div class="indicacionesPedido">
+            <h2>¿Cómo hacer un pedido?</h2>
+            <ol>
+                <li>Desde productos, busque el artículo, indique la cantidad que necesita y haga click en “Agregar al pedido”.</li>
+                <li>Desde el carrito de compra, ingrese el código del producto, la cantidad y haga click en "+Agregar". Desde el carrito también puede agregar o modificar los datos cargados previamente.</li>
+                <li>Una vez que finaliza de cargar los articulos, haga click en "Realizar pedido".</li>
+                <li>Recibirá un email informándole que su pedido ha sido recibido. En esta instancia puede realizar cambios en el pedido hasta que sea confirmado por su vendedor.</li>
+                <li>Recibirá un segundo email informándole que su pedido ha sido confirmado, con el número de pedido para el seguimiento y el detalle del mismo.</li>
+                <li>Recibirá un tercer email informándole que su pedido ha sido enviado, con el detalle del envío (transporte, número de seguimiento del transporte, bultos, etc.).</li>
+            </ol>
+            <p><strong>Ante cualquier duda comuníquese con nosotros vía email o teléfono y con gusto lo ayudaremos.</strong></p>
+            <p><strong>El equipo de Electromecánica P&P</strong></p>
+        </div>
+    </main>
+    <footer>
+        <div class="contactarse">
+            <div class="contactoSinRedes">
+                <p>Castelli 2995, Santa Fe (CP 3000) - Argentina</p>
+                <button class="ubicacion">
+                    <a href="https://www.google.com/maps/place//@-31.5991731,-60.6865821,15z?entry=ttu" target="black">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>Ver en mapa la Ubicacion</a></button>
+                <p>+54 (0342) 155-513370</p>
+                <p>info@pypelectromecanica.com.ar</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
