@@ -16,8 +16,8 @@ h1 {
     font-size: 1.3rem;
     font-weight: 400;
     border-radius: 15px;
-    background-color: rgba(54, 76, 154, 0.1);
-    border: 5px solid rgba(0, 0, 0, 0.567);
+    background-color:#EA4C89;
+    border: 5px solid #EA4C89;
     padding: 5px 15px;
 }
 
@@ -118,21 +118,34 @@ textarea {
     font-size: 2rem;
 }
 
+fieldset select{
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: solid 3px #EA4C89;
+    padding: 5px;
+    margin: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+fieldset select:hover:focus{
+    background-color: black;
+}
 /* Estilos para el elemento con ID 'subir' */
 #subir {
-    position: absolute;
-    bottom: 100px;
-    right: 20px;
-    margin: auto;
     font-family: 'Quicksand', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
     border-radius: 15px;
-    background-color: rgba(251, 250, 252);
-    border: 5px solid rgba(0, 0, 0, 0.567);
+    background-color: rgba(54, 76, 154, 0.1);
+    border: 5px solid #EA4C89;
     padding: 5px 15px;
+    margin-top: 160px;
+    position: absolute;
 }
 
 #subir a {
-    color: black;
+    color: white;
     font-size: 1.3rem;
     font-weight: 800;
 }
