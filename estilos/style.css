@@ -92,9 +92,20 @@ input {
     color: white;
 }
 
+.inicio ul li a:hover{
+    transition: 1s;
+    border-bottom: 3px solid #EA4C89;
+}
+
 .enlaces a{
     color:white;
-    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.enlaces ul li a:hover{
+    transition: 1s;
+    border-bottom: 3px solid #EA4C89;
+    border-bottom-width: auto;
 }
 
 ul li {
