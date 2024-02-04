@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import "/estilos/estilo.css";
+.productoBuscado h1 {
+  color: white;
+  margin-top: 30px;
+}
+
+.contactarse {
+  flex-direction: column;
+}
+
+/* Estilos para la sección 'busqueda' */
+.busqueda {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 40px 0px;
+}
+.busqueda input {
+  height: 55px;
+  width: calc(100% - 1200px);
+  margin-left: 15px;
+  font-size: 2rem;
+}
+.busqueda svg {
+  background-color: rgba(57, 57, 190, 0.463);
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  color: white;
+}
+.busqueda p {
+  position: absolute;
+  margin-top: 150px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 35px;
+}
+
+/* Estilos para la sección 'pedido' */
+.pedido {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1.5rem;
+}
+.pedido svg {
+  margin-top: 30px;
+  margin-left: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.productos {
+  align-content: start;
+}
+.productos ul li {
+  display: flex;
+  color: white;
+  font-size: 2rem;
+}
+
+fieldset select {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: solid 3px #EA4C89;
+  padding: 5px;
+  margin: 10px;
+  background-color: transparent;
+  color: white;
+}
+fieldset select:hover {
+  background-color: black;
+}
+fieldset select:focus {
+  background-color: black;
+}
+
+/* Estilos para el elemento con ID 'subir' */
+/* Estilos para botones */
+#arriba {
+  margin: auto;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  border-radius: 15px;
+  background-color: rgba(54, 76, 154, 0.1);
+  border: 5px solid #EA4C89;
+  padding: 5px 15px;
+  position: absolute;
+}
+#arriba a {
+  color: white;
+}/*# sourceMappingURL=estiloProducto.css.map */

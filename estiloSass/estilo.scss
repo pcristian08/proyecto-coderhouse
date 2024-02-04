@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import "../estiloSass/page/estiloCarrito.scss";
+@import "../estiloSass/page/estiloContacto.scss";
+@import "../estiloSass/page/estiloEmpresa.scss";
+@import "../estiloSass/page/estiloProducto.scss";
+@import "./generales/mediaIndex";
+
+$rosa: #EA4C89;
+
+body {
+    background-image: url(../multimedia/fondo-negro.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+footer {
+    bottom: 5px;
+    justify-content: center;
+    padding: 20px 0;
+    margin-top: 200px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    max-width: 100%;
+    margin-left: auto; 
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    margin-left: auto;
+}
+
+.acceso {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.7);
+    padding: 10px 5px 20px 5px;
+}
+
+.contactar {
+    font-size: 1.2rem;
+    color: red;
+
+    &:hover{
+        color: #EA4C89;
+    }
+}
+
+input {
+    border: solid 3px grey;
+    border-radius: 5px;
+    padding:5px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.enviar {
+    color: white;
+    border: solid 3px rgb(173, 14, 14);
+    border-radius: 5px;
+    background-color: red;
+    padding:5px;
+}
+
+.compania{
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 16px;
+    padding-left: 12px;
+
+    h1 {
+        color: black;
+        font-size: 2rem;
+    }
+}
+
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    background-color: rgb(0, 0, 0, 0.25);
+    padding: 10px 15px;
+}
+
+.inicio {
+    justify-items: center;
+
+    ul {
+        li {
+            a {
+                color: white;
+                text-decoration: none;
+    
+    
+                &:hover{
+                    transition: 1s;
+                    border-bottom: 3px solid $rosa;
+                }
+            }
+        }
+    }
+}
+
+.enlaces {
+    ul {
+        li {
+            a{
+                color:white;
+                margin-left: 25px;
+                text-decoration: none;
+
+                &:hover {
+                    transition: 1s;
+                    border-bottom: 3px solid $rosa;
+                }
+            }
+        }
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+        display: inline;
+    }
+}
+
+.contactarse {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    max-width: auto;
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.contactoSinRedes {
+    padding: 10px 350px;
+    border-radius: 5px;
+
+    p {
+        color: white;
+        letter-spacing: 1px;
+    }
+
+    button {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        border-radius: 15px;
+        background-color: rgb(255, 255, 255, 0.1);
+        border: 5px solid rgba(0, 0, 0, 0.567);
+        padding: 5px 15px;
+
+        a {
+            color: white;
+        }
+    }
+}
+
+.contactoConRedes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    svg {
+        height: 50px;
+        width: 50px;
+        color: white;
+    }
+
+    a {
+        margin-bottom: 50px;
+        margin-right: 150px;
+    }
+}
+
+.redesSociales {
+    transform: translateY(50%);
+}
+
+.responsive-dropdown {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contactoSinRedes {
+        padding: 0px;
+        margin: 0px 10px;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 380px) {
+    .acceso {
+        margin: auto;
+        justify-items: center;
+        background-color: rgb(255, 255, 255, 0.2);
+        color: white;
+        flex-direction: column;
+
+        span {
+            font-size: 0.8rem;
+        }
+
+        input {
+            font-size: 0.8rem;
+        }
+
+        button {
+            font-size: 0.8rem;
+        }
+    }
+
+    .compania {
+        background-color: transparent;
+        border-bottom: solid 3px $rosa;
+        border-top: solid 3px $rosa;
+        
+        h1 { 
+        color: white;
+        text-align: center;
+        }
+    }
+
+    .responsive-dropdown {
+        display: block;
+    }
+        
+    .navegacion {
+        .inicio {
+            display: none;
+        }
+        .enlaces {
+            select {
+                text-align: center;
+                width: 150%;
+                padding: 8px;
+                margin: 10px 70%;
+                border: 2px solid $rosa;
+                border-radius: 5px;
+                background-color: #fff;
+                color: #333;
+                font-size: 1rem;
+                font-weight: 600;
+                
+                &:focus {
+                    background-color: rgb(234, 76, 137, 0.5);
+                    color: white;
+                }
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+
+    .contactoConRedes{
+        display: none;
+
+        button {
+            font-size: 0.8rem;
+        }
+    }
+
+    footer {
+        font-size: 0.8rem;
+        font-weight: 100;
+        padding: 0px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+}
