@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,300&display=swap');
-@import "/estilos/estilo.css";
-
-*{
+* {
     font-family: 'Ubuntu', sans-serif;
     color: white;
 }
-h3{
+
+h3 {
     text-align: center;
 }
-.container{
-    margin:auto;
+
+.container {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,19 +16,21 @@ h3{
     gap: 20px;
     width: 450px;
 }
-.buttons{
+
+.buttons {
     align-self: flex-start;
     display: flex;
     gap: 20px;
 }
-.google-btn{
+
+.google-btn, .facebook-btn{
     background-color: transparent;
     border: none;
     border-radius: 3px;
     height: 40px;
     display: flex;
     align-items: center;
-    padding:2px;
+    padding: 2px;
     cursor: pointer;
 
     picture {
@@ -53,32 +53,12 @@ h3{
         font-weight: 500;
     }
 
-    &:hover{
+    &:hover {
         opacity: 0.5;
     }
 }
 
-.facebook-btn{
-    border: none;
-    width: 36px;
-    height: 36px;
-    border-radius: 5px;
-    color: #ccc;
-    cursor: pointer;
-
-    picture {
-        img {
-            width: 100%;
-            border-radius: 5px;
-        }
-    }
-
-    &:hover{
-        opacity: 0.5;
-    }
-}
-
-.separador{
+.separador {
     display: flex;
     width: 100%;
     gap: 15px;
@@ -114,14 +94,13 @@ label {
     gap: 5px;
 
     input {
-        width:90%;
         background-color: #212121;
-        border: none;
+        border: 1px solid transparent;
         border-radius: 10px;
         padding: 10px 20px;
         outline: none;
         font-size: 14pt;
-        margin:  10px;
+        margin: 10px;
         transition: background-color 0.5s, border 0.5s;
         color: #ccc;
 
@@ -143,11 +122,11 @@ label {
     }
 }
 
-.checkbox{
+.checkbox {
     display: flex;
     flex-direction: row;
 
-    input[type="checkbox"]{
+    input[type="checkbox"] {
         width: 20px;
     }
 
@@ -156,14 +135,21 @@ label {
     }
 }
 
-.submit{
+.legales{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+
+}
+
+.submit {
     background-color: #EA4C89;
     color: white;
     font-weight: 400;
     border: none;
     border-radius: 10px;
     width: 45%;
-    margin: 10px;
     padding: 10px;
     font-size: 13pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -181,16 +167,13 @@ label {
         font-weight: 400;
         margin: auto;
     }
-    button {
-        margin: 30px 125px 5px 125px;
-    }
 
-    &:hover {
-        opacity: 0.6;
+    button {
+        margin-inline: auto;
     }
 }
 
-#politica{
+#politica {
     margin: 10px;
 }
 
@@ -210,7 +193,7 @@ label {
 .home {
     justify-content: center;
     align-items: center;
-    
+
     a {
         svg {
             font-size: 50px;
@@ -218,6 +201,122 @@ label {
             height: 50px;
             width: 50px;
             margin-top: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 380px) {
+    iframe {
+        height: 150px;
+    }
+
+    .buttons {
+        span {
+            font-size: 0.6rem
+        }
+    }
+
+    .google-btn, .facebook-btn {
+        picture {
+            background-color: transparent;
+        }
+    }
+
+    form {
+        font-size: 0.8rem;
+    }
+
+    .checkbox {
+        font-size: 0.6rem;
+    }
+
+    .legales {
+        font-size: 0.8rem;
+        align-items: center;
+
+        span {
+            font-size: 0.6rem;
+        }
+
+        button {
+            margin: 15px 0px;
+            font-size: 0.8rem;
+        }
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .section-inputs {
+        input {
+            font-size: 0.8rem;
+        }
+    }
+
+    #email {
+        font-size: 0.8rem;
+    }
+
+    #password {
+        font-size: 0.8rem;
+    }    
+
+    label {
+        input {
+            width: auto;
+        }
+    }
+
+    .logoEmpresa{
+        img {
+            width: 60px;
+            height: auto;
+        }
+    }
+
+    .home {
+        a {
+            svg {
+                width:25px;
+            }
+        }
+    }
+
+    #name {
+        padding-left: 10px;
+    }
+
+    .contactarse {
+        padding: 0px;
+    }
+
+    .contactoSinRedes {
+        font-size: 0.6rem;
+    }
+
+    label{
+        input {
+            padding: 10px;
+            margin: 0px;
+        }
+    }
+
+    .logoEmpresa {
+        padding: 0px 20px 0px 10px;
+    }
+
+    .home {
+        padding: 0px 15px 0px 25px;
+        a{
+            svg {
+                margin-top: 25px;
+            }
+            
+        }
+        p {
+            display: none;
         }
     }
 }

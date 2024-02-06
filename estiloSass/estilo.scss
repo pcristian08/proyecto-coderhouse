@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
-@import "../estiloSass/page/estiloCarrito.scss";
-@import "../estiloSass/page/estiloContacto.scss";
-@import "../estiloSass/page/estiloEmpresa.scss";
-@import "../estiloSass/page/estiloProducto.scss";
-@import "./generales/mediaIndex";
 
 $rosa: #EA4C89;
 
@@ -20,7 +15,7 @@ body {
 footer {
     bottom: 5px;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px 0px;
     margin-top: 200px;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2rem;
@@ -30,6 +25,9 @@ footer {
     margin-right: auto;
     box-sizing: border-box;
     width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 a {
@@ -148,6 +146,7 @@ ul {
     max-width: auto;
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 10px;
+    padding: 0px 55px;
 }
 
 .contactoSinRedes {
@@ -204,6 +203,7 @@ ul {
         padding: 0px;
         margin: 0px 10px;
         background-color: transparent;
+
     }
 }
 
@@ -273,10 +273,6 @@ ul {
 
     .contactoConRedes{
         display: none;
-
-        button {
-            font-size: 0.8rem;
-        }
     }
 
     footer {
@@ -284,4 +280,13 @@ ul {
         font-weight: 100;
         padding: 0px;
     }
+
+    .contactoSinRedes {
+        margin-top: 10px;
+        button {
+            font-size: 0.8rem;
+            align-items: center;
+        }
+    }
+
 }
