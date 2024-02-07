@@ -19,6 +19,8 @@
 .imagenLocal {
   margin-right: 50px;
   max-width: 100%;
+  box-shadow: 15px 15px 20px rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
 }
 
 img {

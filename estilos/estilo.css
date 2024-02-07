@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 body {
   background-image: url(../multimedia/fondo-negro.jpg);
@@ -115,6 +116,25 @@ input {
 ul li {
   list-style: none;
   display: inline;
+}
+
+#carousel {
+  background-color: rgba(234, 76, 137, 0.1);
+}
+#carousel .carousel-item img {
+  max-height: 500px; /* Puedes ajustar este valor según tus necesidades */
+  width: auto;
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  justify-content: flex-end;
+}
+
+.carousel-caption h2 {
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-top: 150px;
 }
 
 .contactarse {

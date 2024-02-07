@@ -138,6 +138,31 @@ ul {
     }
 }
 
+#carousel { 
+    background-color: rgba(234, 76, 137, 0.1);
+    .carousel-item {
+        img {
+            max-height: 500px; /* Puedes ajustar este valor según tus necesidades */
+            width: auto;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+            justify-content: flex-end;
+        }
+    }
+}
+
+.carousel-caption {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+.carousel-caption {
+    p {
+        font-size: 1.5rem;
+        margin-top: 150px;
+    }
+}
+
 .contactarse {
     display: flex;
     flex-direction: row;
@@ -203,7 +228,6 @@ ul {
         padding: 0px;
         margin: 0px 10px;
         background-color: transparent;
-
     }
 }
 
