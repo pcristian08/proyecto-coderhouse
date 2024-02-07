@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../estilos/estiloCarrito.css">
     <title>Carrito</title>
     <link rel="icon" href="../multimedia/pyp.png" type="img">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header>
@@ -43,11 +44,11 @@
                 </ul>
                 <!-- Lista desplegable para pantallas pequeñas -->
                 <select class="responsive-dropdown">
-                    <option value="#">Inicio</option>
-                    <option value="./page/empresa.html">Empresa</option>
-                    <option value="./page/carrito.html">Carrito</option>
-                    <option value="./page/producto.html">Productos</option>
-                    <option value="./page/contacto.html">Contacto</option>
+                    <option value="./index.html">Inicio</option>
+                    <option value="../page/empresa.html">Empresa</option>
+                    <option value="../page/carrito.html">Carrito</option>
+                    <option value="../page/producto.html">Productos</option>
+                    <option value="../page/contacto.html">Contacto</option>
                 </select>
             </div>
         </div>
@@ -56,7 +57,7 @@
                 <a href="">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                      </svg>
+                    </svg>
                 </a>
             <p>Ingrese marca, modelo, código, n° original o atributo</p>
         </div>
@@ -120,5 +121,12 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $('.responsive-dropdown').change(function(){
+                window.location.href = $(this).val();
+            });
+        });
+    </script>
 </body>
 </html>

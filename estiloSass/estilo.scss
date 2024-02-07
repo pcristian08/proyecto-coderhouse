@@ -172,8 +172,6 @@ ul {
     }
 }
 
-
-
 .contactarse {
     display: flex;
     flex-direction: row;
@@ -277,7 +275,27 @@ ul {
     .responsive-dropdown {
         display: block;
     }
-        
+
+    .carousel-item-background {
+        width: 100%;
+        height: 150px;
+    }
+
+    .carousel-caption {
+        max-width: 40%;
+    }
+
+    .text {
+        h2 {
+            font-size: 1.2rem;
+        }
+        p {
+            text-align: left;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+    }
+    
     .navegacion {
         .inicio {
             display: none;
