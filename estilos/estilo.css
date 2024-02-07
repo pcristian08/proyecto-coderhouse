@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 body {
   background-image: url(../multimedia/fondo-negro.jpg);
@@ -118,23 +117,38 @@ ul li {
   display: inline;
 }
 
-#carousel {
-  background-color: rgba(234, 76, 137, 0.1);
-}
-#carousel .carousel-item img {
-  max-height: 500px; /* Puedes ajustar este valor según tus necesidades */
-  width: auto;
-  margin: 0 auto; /* Centra la imagen horizontalmente */
-  justify-content: flex-end;
+.carousel-item-background {
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  width: 100%;
+  margin-top: 30px;
 }
 
+.reacondicionados {
+  background-image: url("../multimedia/Solenoides.jpg");
+}
+
+.reguladores {
+  background-image: url("../multimedia/Reguladores.jpg");
+}
+
+.portadiodos {
+  background-image: url("../multimedia/Rectificadores.jpg");
+}
+
+.carousel-caption {
+  top: 30%;
+  transform: translateY(-50%);
+  max-width: 30%;
+}
 .carousel-caption h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
+  text-align: justify;
 }
-
 .carousel-caption p {
-  font-size: 1.5rem;
-  margin-top: 150px;
+  font-size: 1.8rem;
+  text-align: justify;
 }
 
 .contactarse {
