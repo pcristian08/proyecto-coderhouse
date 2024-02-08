@@ -131,7 +131,7 @@ label span {
 }
 
 .submit {
-  background-color: #EA4C89;
+  background-color: rgb(255, 115, 0);
   color: white;
   font-weight: 400;
   border: none;

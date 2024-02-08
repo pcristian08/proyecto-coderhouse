@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
-$rosa: #EA4C89;
+$naranja: rgb(255, 115, 0);
 
 body {
     background-image: url(../multimedia/fondo-negro.jpg);
@@ -49,15 +49,6 @@ a {
     padding: 10px 5px 20px 5px;
 }
 
-.contactar {
-    font-size: 1.2rem;
-    color: red;
-
-    &:hover{
-        color: #EA4C89;
-    }
-}
-
 input {
     border: solid 3px grey;
     border-radius: 5px;
@@ -69,19 +60,21 @@ input {
 
 .enviar {
     color: white;
-    border: solid 3px rgb(173, 14, 14);
     border-radius: 5px;
-    background-color: red;
+    border-bottom: 3px solid $naranja;
+    background-color: grey;
     padding:5px;
+    cursor: pointer;
 }
 
 .compania{
-    background-image: linear-gradient(to left, $rosa, white) ;
+    background-image: linear-gradient(to left, $naranja, white) ;
     padding: 10px;
     padding-left: 12px;
 
     h1 {
         color: black;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         font-size: 1.8rem;
     }
 
@@ -108,7 +101,7 @@ input {
     
                 &:hover{
                     transition: 1s;
-                    border-bottom: 3px solid $rosa;
+                    border-bottom: 3px solid $naranja;
                 }
             }
         }
@@ -125,7 +118,7 @@ input {
 
                 &:hover {
                     transition: 1s;
-                    border-bottom: 3px solid $rosa;
+                    border-bottom: 3px solid $naranja;
                 }
             }
         }
@@ -274,8 +267,8 @@ ul {
 
     .compania {
         background-color: transparent;
-        border-bottom: solid 3px $rosa;
-        border-top: solid 3px $rosa;
+        border-bottom: solid 3px $naranja;
+        border-top: solid 3px $naranja;
         
         h1 { 
         text-align: center;
@@ -321,7 +314,7 @@ ul {
                 width: 150%;
                 padding: 8px;
                 margin: 10px 70%;
-                border: 2px solid $rosa;
+                border: 2px solid $naranja;
                 border-radius: 5px;
                 background-color: #fff;
                 color: #333;

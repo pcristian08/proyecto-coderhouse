@@ -1,3 +1,5 @@
+$naranja: rgb(255, 115, 0);
+
 .busqueda {
     display: flex;
     background-image: linear-gradient(to left, rgb(0, 0, 0, 0.1), rgb(128, 128, 128, 0.1));
@@ -63,7 +65,7 @@
     }
     100% {
         transform: translateX(500px);
-        color: #EA4C89;
+        color: $naranja;
         opacity: 1;
     }
 }
@@ -108,7 +110,7 @@ textarea {
         border-radius: 10px;
         margin: 10px;
         font-size: 1.7rem;
-        background-color: #EA4C89;
+        background-color: $naranja;
         color: white;
         text-decoration: none;
         font-weight: 400;
@@ -135,7 +137,8 @@ textarea {
     font-size: 1.3rem;
     font-family: 'Oswald', sans-serif;
     border-radius: 20px;
-    border: solid 1px #EA4C89;background-image: linear-gradient(to left, rgba(234, 76, 137, 0.4), rgba(0, 0, 0, 0.4));
+    border: solid 1px $naranja;
+    background-image: linear-gradient(to left, rgb(255, 115, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 .productos {

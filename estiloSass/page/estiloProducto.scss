@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import "/estilos/estilo.css";
 
+$naranja: rgb(255, 115, 0);
+
 .productoBuscado {
     h1 {
         color: white;
@@ -78,7 +80,7 @@ fieldset {
     select {
         font-size: 1.5rem;
         border-radius: 5px;
-        border: solid 3px #EA4C89;
+        border: solid 3px $naranja;
         padding: 5px;
         margin: 10px;
         background-color: transparent;
@@ -104,7 +106,7 @@ fieldset {
     justify-items: center;
 }
 .tarjeta {
-    border: 1px solid #EA4C89;
+    border: 1px solid $naranja;
     border-radius: 5px;
     padding: 10px;
     margin-top: 50px;
@@ -162,7 +164,7 @@ fieldset {
     font-weight: 400;
     border-radius: 15px;
     background-color: rgba(54, 76, 154, 0.1);
-    border: 5px solid #EA4C89;
+    border: 5px solid $naranja;
     padding: 5px 15px;
     position: absolute;
 

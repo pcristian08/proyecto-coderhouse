@@ -58,7 +58,7 @@
   }
   100% {
     transform: translateX(500px);
-    color: #EA4C89;
+    color: rgb(255, 115, 0);
     opacity: 1;
   }
 }
@@ -98,7 +98,7 @@ textarea {
   border-radius: 10px;
   margin: 10px;
   font-size: 1.7rem;
-  background-color: #EA4C89;
+  background-color: rgb(255, 115, 0);
   color: white;
   text-decoration: none;
   font-weight: 400;
@@ -122,8 +122,8 @@ textarea {
   font-size: 1.3rem;
   font-family: "Oswald", sans-serif;
   border-radius: 20px;
-  border: solid 1px #EA4C89;
-  background-image: linear-gradient(to left, rgba(234, 76, 137, 0.4), rgba(0, 0, 0, 0.4));
+  border: solid 1px rgb(255, 115, 0);
+  background-image: linear-gradient(to left, rgba(255, 115, 0, 0.4), rgba(0, 0, 0, 0.4));
 }
 
 .productos ul li {

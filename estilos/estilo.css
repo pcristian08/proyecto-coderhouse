@@ -46,14 +46,6 @@ a {
   padding: 10px 5px 20px 5px;
 }
 
-.contactar {
-  font-size: 1.2rem;
-  color: red;
-}
-.contactar:hover {
-  color: #EA4C89;
-}
-
 input {
   border: solid 3px grey;
   border-radius: 5px;
@@ -65,19 +57,21 @@ input {
 
 .enviar {
   color: white;
-  border: solid 3px rgb(173, 14, 14);
   border-radius: 5px;
-  background-color: red;
+  border-bottom: 3px solid rgb(255, 115, 0);
+  background-color: grey;
   padding: 5px;
+  cursor: pointer;
 }
 
 .compania {
-  background-image: linear-gradient(to left, #EA4C89, white);
+  background-image: linear-gradient(to left, rgb(255, 115, 0), white);
   padding: 10px;
   padding-left: 12px;
 }
 .compania h1 {
   color: black;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 1.8rem;
 }
 
@@ -99,7 +93,7 @@ input {
 }
 .inicio ul li a:hover {
   transition: 1s;
-  border-bottom: 3px solid #EA4C89;
+  border-bottom: 3px solid rgb(255, 115, 0);
 }
 
 .enlaces ul li a {
@@ -109,7 +103,7 @@ input {
 }
 .enlaces ul li a:hover {
   transition: 1s;
-  border-bottom: 3px solid #EA4C89;
+  border-bottom: 3px solid rgb(255, 115, 0);
 }
 
 ul li {
@@ -240,8 +234,8 @@ ul li {
   }
   .compania {
     background-color: transparent;
-    border-bottom: solid 3px #EA4C89;
-    border-top: solid 3px #EA4C89;
+    border-bottom: solid 3px rgb(255, 115, 0);
+    border-top: solid 3px rgb(255, 115, 0);
   }
   .compania h1 {
     text-align: center;
@@ -277,7 +271,7 @@ ul li {
     width: 150%;
     padding: 8px;
     margin: 10px 70%;
-    border: 2px solid #EA4C89;
+    border: 2px solid rgb(255, 115, 0);
     border-radius: 5px;
     background-color: #fff;
     color: #333;
