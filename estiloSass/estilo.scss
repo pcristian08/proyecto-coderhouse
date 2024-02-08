@@ -45,7 +45,7 @@ a {
     font-size: 1.5rem;
     margin-left: 50px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.7);
+    background-image: linear-gradient(to bottom, white, black);
     padding: 10px 5px 20px 5px;
 }
 
@@ -76,13 +76,13 @@ input {
 }
 
 .compania{
-    background-color: rgb(255, 255, 255, 0.5);
-    padding: 16px;
+    background-image: linear-gradient(to left, $rosa, white) ;
+    padding: 10px;
     padding-left: 12px;
 
     h1 {
         color: black;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -177,7 +177,6 @@ ul {
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    max-width: auto;
     background-color: rgb(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 0px 55px;
@@ -207,25 +206,37 @@ ul {
     }
 }
 
+#verde {
+    color: #00E676;
+    
+}
+
+#lila {
+    color: #FE0AC8;
+}
+
+#azul {
+    color: #17AEFE
+}
+
 .contactoConRedes {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
 
     svg {
-        height: 50px;
-        width: 50px;
-        color: white;
+        height: 30px;
+        width: 30px;
+        transition: transform 0.3s, translateY 0.3s;
+
+        &:hover {
+            transform: scale(1.5) translateY(-15px);
+        }
     }
 
     a {
-        margin-bottom: 50px;
-        margin-right: 150px;
+        margin: 20px;
     }
-}
-
-.redesSociales {
-    transform: translateY(50%);
 }
 
 .responsive-dropdown {
@@ -240,16 +251,15 @@ ul {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .acceso {
         margin: auto;
         justify-items: center;
-        background-color: rgb(255, 255, 255, 0.2);
-        color: white;
         flex-direction: column;
-
+        
         span {
-            font-size: 0.8rem;
+            font-size: 1rem;
+            font-weight: 600;
         }
 
         input {
@@ -267,13 +277,17 @@ ul {
         border-top: solid 3px $rosa;
         
         h1 { 
-        color: white;
         text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
         }
     }
 
     .responsive-dropdown {
-        display: block;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .carousel-item-background {
@@ -328,18 +342,26 @@ ul {
         display: none;
     }
 
-    footer {
-        font-size: 0.8rem;
-        font-weight: 100;
+    .contactarse {
         padding: 0px;
     }
 
     .contactoSinRedes {
+        font-size: 0.6rem;
+    }
+
+    footer {
+        font-size: 0.6rem;
+        font-weight: 100;
+        padding: 0px;
+    }
+
+
+    .contactoSinRedes {
         margin-top: 10px;
         button {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
             align-items: center;
         }
     }
-
 }

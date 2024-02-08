@@ -184,7 +184,7 @@ label span {
   margin-top: 30px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
   iframe {
     height: 150px;
   }

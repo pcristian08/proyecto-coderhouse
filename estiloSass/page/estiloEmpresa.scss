@@ -47,9 +47,13 @@ img {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     .empresa{
         margin: 30px;
+    }
+
+    .imagenLocal {
+        box-shadow: none;
     }
 
     .descripcionEmpresa {

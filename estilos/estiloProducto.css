@@ -77,8 +77,51 @@ fieldset select:focus {
   background-color: black;
 }
 
+.listaProductos {
+  max-width: 1800px;
+  margin: 0 auto;
+  overflow: hidden;
+  justify-items: center;
+}
+
+.tarjeta {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 50px 20px 20px 0;
+  width: calc(20% - 10px);
+  float: left;
+  aspect-ratio: 1/1;
+}
+
+.imagenProducto {
+  width: 100%;
+  height: 150px;
+  background-color: #f0f0f0;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px;
+}
+
+.imagenProducto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.titulo {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.descripcion {
+  font-size: 14px;
+  color: white;
+}
+
 /* Estilos para el elemento con ID 'subir' */
-/* Estilos para botones */
 #arriba {
   margin: auto;
   font-family: "Quicksand", sans-serif;
