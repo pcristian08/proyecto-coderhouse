@@ -14,11 +14,9 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 450px;
 }
 
 .buttons {
-  align-self: flex-start;
   display: flex;
   gap: 20px;
 }
@@ -187,6 +185,7 @@ label span {
 @media (max-width: 480px) {
   iframe {
     height: 150px;
+    width: 100%;
   }
   .buttons span {
     font-size: 0.6rem;
@@ -214,6 +213,10 @@ label span {
   .container {
     width: 90%;
   }
+  .section-inputs {
+    display: flex;
+    flex-direction: column;
+  }
   .section-inputs input {
     font-size: 0.8rem;
   }
@@ -234,7 +237,7 @@ label span {
     width: 25px;
   }
   #name {
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .contactarse {
     padding: 0px;
@@ -247,10 +250,12 @@ label span {
     margin: 0px;
   }
   .logoEmpresa {
-    padding: 0px 20px 0px 10px;
+    padding-right: 10px;
+    padding-left: 5px;
   }
   .home {
-    padding: 0px 15px 0px 25px;
+    padding-left: 10px;
+    padding-right: 5px;
   }
   .home a svg {
     margin-top: 25px;

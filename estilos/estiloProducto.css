@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-@import "/estilos/estilo.css";
 .productoBuscado h1 {
   color: white;
   margin-top: 30px;
