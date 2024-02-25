@@ -39,11 +39,12 @@ a {
 }
 
 .acceso {
-  font-size: 1.5rem;
-  margin-left: 50px;
   border-radius: 5px;
   background-image: linear-gradient(to bottom, white, black);
   padding: 10px 5px 20px 5px;
+}
+.acceso span {
+  font-weight: 600;
 }
 
 input {
@@ -65,20 +66,19 @@ input {
 }
 
 .compania {
-  background-image: linear-gradient(to left, rgb(255, 115, 0), white);
-  padding: 10px;
   padding-left: 12px;
+  background-image: linear-gradient(to left, rgb(255, 115, 0), white);
 }
 .compania h1 {
+  padding: 10px;
   color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .navegacion {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
   font-size: 1.5rem;
   background-color: rgba(0, 0, 0, 0.25);
   padding: 10px 15px;
@@ -120,15 +120,15 @@ ul li {
 }
 
 .reacondicionados {
-  background-image: url("../multimedia/Solenoides.jpg");
+  background-image: url("../multimedia/solenoides.jpg");
 }
 
 .reguladores {
-  background-image: url("../multimedia/Reguladores.jpg");
+  background-image: url("../multimedia/reguladores.jpg");
 }
 
 .portadiodos {
-  background-image: url("../multimedia/Rectificadores.jpg");
+  background-image: url("../multimedia/rectificadores.jpg");
 }
 
 .carousel-caption {
@@ -156,7 +156,7 @@ ul li {
 }
 
 .contactoSinRedes {
-  padding: 10px 350px;
+  padding: 10px;
   border-radius: 5px;
 }
 .contactoSinRedes p {
@@ -209,28 +209,78 @@ ul li {
   display: none;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (min-width: 880px) and (max-width: 1023px) {
+  .acceso input {
+    font-size: 0.8rem;
+    padding: 2px;
+  }
+  .acceso button {
+    padding: 1px;
+    font-size: 0.7rem;
+  }
+  .navegacion {
+    font-size: 1rem;
+  }
+  .compania h1 {
+    font-size: 1.2rem;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-inner {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carousel-item-background {
+    width: 100%;
+    height: 300px;
+  }
+  .carousel-item-background .text h2 {
+    font-size: 1.5rem;
+  }
+  .carousel-item-background .text p {
+    font-size: 1rem;
+  }
+  footer {
+    margin-top: 50px;
+  }
   .contactoSinRedes {
-    padding: 0px;
     margin: 0px 10px;
     background-color: transparent;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  .contactoSinRedes button {
+    font-size: 0.8rem;
+  }
+  .contactoConRedes a {
+    margin: 8px;
+  }
+  .contactoConRedes svg {
+    width: 70%;
   }
 }
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+  .contenedor {
+    justify-content: center;
+    margin-top: 10px;
+  }
   .acceso {
-    margin: auto;
+    margin: 8px;
     justify-items: center;
     flex-direction: column;
   }
   .acceso span {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
   }
   .acceso input {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .acceso button {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .compania {
     background-color: transparent;
@@ -239,8 +289,8 @@ ul li {
   }
   .compania h1 {
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin: 2px 0px;
   }
   .responsive-dropdown {
     display: flex;
@@ -248,45 +298,56 @@ ul li {
     width: 100%;
     margin: 0 auto;
   }
+  select {
+    font-size: 0.8rem;
+  }
   .carousel-item-background {
     width: 100%;
-    height: 150px;
+    height: 180px;
   }
   .carousel-caption {
     max-width: 40%;
+  }
+  .text {
+    max-width: 60%;
   }
   .text h2 {
     font-size: 1.2rem;
   }
   .text p {
     text-align: left;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     font-weight: 700;
+  }
+  .navegacion {
+    justify-content: center;
+    font-size: 1rem;
   }
   .navegacion .inicio {
     display: none;
   }
   .navegacion .enlaces select {
     text-align: center;
-    width: 150%;
-    padding: 8px;
-    margin: 10px 70%;
+    padding: 5px;
+    margin-top: 20px;
     border: 2px solid rgb(255, 115, 0);
     border-radius: 5px;
     background-color: #fff;
     color: #333;
-    font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
   }
   .navegacion .enlaces select:focus {
-    background-color: rgba(234, 76, 137, 0.5);
+    background-color: rgba(243, 109, 37, 0.819);
     color: white;
   }
   .navegacion .enlaces ul {
     display: none;
   }
-  .contactoConRedes {
-    display: none;
+  .contactoConRedes svg {
+    width: 50%;
+  }
+  .contactoConRedes a {
+    margin: 5px;
   }
   .contactarse {
     padding: 0px;
@@ -297,13 +358,17 @@ ul li {
   footer {
     font-size: 0.6rem;
     font-weight: 100;
-    padding: 0px;
+    margin-top: 100px;
   }
   .contactoSinRedes {
     margin-top: 10px;
   }
   .contactoSinRedes button {
+    margin-bottom: 10px;
     font-size: 0.6rem;
     align-items: center;
+  }
+  .contactoSinRedes p, .contactoSinRedes button {
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=estilo.css.map */

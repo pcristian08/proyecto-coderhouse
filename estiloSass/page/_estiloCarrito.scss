@@ -181,6 +181,72 @@ textarea {
     }
 }
 
+@media only screen and (min-width:880px) and (max-width:1023px) {
+    .busqueda {
+        padding: 15px;
+        input {
+            width: 50%;
+            font-size: 1rem;
+            height: 35px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-top: 70px;
+        }
+
+        svg {
+            width: 50%;
+        }
+    }
+
+    .listaDeProductos, .observaciones{
+        font-size: 1rem;
+
+        ol {
+            margin-bottom: 50px;
+        }
+    }
+
+    textarea {
+        font-size: 0.8rem;
+    }
+
+    .montoTotal {
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .total {
+        button {
+            font-size: 1.2rem;
+        }
+    }
+
+    .indicacionesPedido {
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        ol ,p {
+            font-size: 0.8rem;
+        }
+    }
+
+    .pedido {
+        .carrito {
+            h1 {
+                font-size: 1.5rem;
+            }
+            svg {
+                height: 25px;
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
 @media (max-width: 480px) {
     * {
         font-size: 0.8rem;
@@ -223,6 +289,12 @@ textarea {
         }
     }
 
+    .listaDeProductos {
+        ol {
+            margin-bottom: 50px;
+        }
+    }
+
     textarea {
         font-size: 1rem;
     }
@@ -247,5 +319,9 @@ textarea {
         text-align: justify;
         margin: 5px;
         padding: 5px;
+    }
+
+    footer {
+        margin-top: 20px;
     }
 }

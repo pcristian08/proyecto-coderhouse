@@ -205,6 +205,59 @@ label {
     }
 }
 
+@media only screen and (min-width:880px) and (max-width:1023px) {
+    iframe {
+        height: 200px;
+    }
+
+    .compania {
+        h1 {
+            font-size: 1.2rem;
+        }
+    }
+
+    .container {
+        width: 50%;
+
+        form {
+            font-size: 0.8rem;
+            
+            input {
+                font-size: 0.7rem;
+            }         
+        }
+    }
+
+    .legales {
+        button {
+            font-size: 0.7rem;
+            width: auto;
+        }
+    }
+
+    .logoEmpresa {
+        img {
+            height: 50px;
+            width: 70px;
+            margin-right: 10px;
+        }
+    }
+
+    .home {
+        a {
+            svg {
+                margin-top: 30px;
+                height: 30px;
+            }
+        }
+
+        p {
+            margin: 10px;
+            font-size: 1rem;
+        }
+    }
+}
+
 
 @media (max-width: 480px) {
     iframe {
@@ -279,14 +332,6 @@ label {
         }
     }
 
-    .home {
-        a {
-            svg {
-                width:25px;
-            }
-        }
-    }
-
     #name {
         padding-left: 0px;
     }
@@ -317,11 +362,16 @@ label {
         a{
             svg {
                 margin-top: 25px;
+                width: 25px;
             }
             
         }
         p {
             display: none;
         }
+    }
+
+    footer {
+        margin-top: 50px;
     }
 }

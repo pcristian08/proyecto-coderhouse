@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+@mixin quicksand-font {
+    font-family: 'Quicksand', sans-serif;
+}
+
 $naranja: rgb(255, 115, 0);
 
 .productoBuscado {
@@ -158,30 +162,49 @@ fieldset {
 /* Estilos para el elemento con ID 'subir' */
 
 #arriba {
-    font-family: 'Quicksand', sans-serif;
+    @include quicksand-font;
     font-size: 1.3rem;
     font-weight: 400;
     border-radius: 15px;
     background-color: rgba(54, 76, 154, 0.1);
     border: 5px solid $naranja;
     padding: 5px 15px;
-    position: absolute;
 
     a {
         color: white;
     }
 }
 
-@media (max-width: 480px) {
-    footer {
-        position: relative; /* Necesario para posicionar el botón de manera absoluta dentro del footer */
+@media only screen and (min-width:880px) and (max-width:1023px) {
+    .productoBuscado {
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        fieldset {
+            select {
+                font-size: 1rem;
+            }
+        }
     }
 
     #arriba {
-        position: absolute; /* Posicionamiento absoluto */
-        bottom: calc(100% + 20px); /* Coloca el botón 20px por encima del footer */
-        left: 50%; /* Centrado horizontalmente */
-        transform: translateX(-50%); /* Centrado horizontalmente */
+        font-size: 1rem;
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        position: relative; 
+    }
+
+    #arriba {
+        position: absolute; 
+        bottom: calc(100% + 20px); 
+        left: 50%; 
+        transform: translateX(-50%);
         font-size: 0.6rem;
     }
     
