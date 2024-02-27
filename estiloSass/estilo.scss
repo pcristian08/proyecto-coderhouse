@@ -3,7 +3,7 @@
 $naranja: rgb(255, 115, 0);
 
 body {
-    background-image: url(../multimedia/fondo-negro.jpg);
+    background-image: url(../assets/fondo-negro.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -141,15 +141,15 @@ ul {
 }
 
 .reacondicionados {
-    background-image: url('../multimedia/solenoides.jpg');
+    background-image: url('../assets/solenoides.jpg');
 }
 
 .reguladores {
-    background-image: url('../multimedia/reguladores.jpg');
+    background-image: url('../assets/reguladores.jpg');
 }
 
 .portadiodos {
-    background-image: url('../multimedia/rectificadores.jpg');
+    background-image: url('../assets/rectificadores.jpg');
 }
 
 .carousel-caption {
